@@ -1,16 +1,16 @@
-# Using while loop to ask the user for their age to determine the ticket price
+# Utilizing a while loop to inquire about the user's age in order to ascertain the ticket price.
 while True:
-    # Asking the user to input their age and type 'quit' once they are finished
+    # Requesting the user to enter their age and type 'quit' when they have completed the input.
     person_age = input("Please enter your age for the ticket price and type 'quit' once you're done: ")
 
-    # Checking if the user entered 'quit'; if true, break the loop
+    # Verifying whether the user entered 'quit'; if so, break the loop.
     if person_age.lower() == 'quit':
         break
 
-    # Convert the entered age to an integer for comparison
+    # Transforming the entered age into an integer for the purpose of comparison.
     person_age = int(person_age)
 
-    # printing the coast of the ticket by determine the movie ticket price based on the person's age
+    # printing the cost of the ticket by determining the movie ticket price based on the individual's age.
     if person_age < 3:
         print("Your movie ticket is free.")
     elif 3 <= person_age <= 12:
